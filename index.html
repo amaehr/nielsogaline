@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Wedding Party</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="mainImage" class="grid">
+        <div class="bg-image"></div>
+        <h1>Bryllupsfest | Hochzeitsfest</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laborum doloremque molestiae! Reprehenderit, explicabo quos pariatur distinctio ratione illo voluptatum.</p>
+
+    </header>
+    <!-- Main -->
+    <main id="main">
+        <!-- Section A -->
+        <section id="section-a" class="grid">
+            <div class="content-wrap">
+                <h2 class="content-title">Hvad | Was</h2>
+                <p>Mere informationer snartest... | Mehr infos folgen bald...</p>
+
+            </div>
+
+        </section>
+
+        <!-- Section B -->
+        <section id="section-b" class="grid">
+            <div class="content-wrap">
+                <h2 class="content-title">Hvor | Wo</h2>
+                <a href="https://h15.dk/" target="_blank">H15 Scene</a>
+
+
+            </div>
+        </section>
+
+        <!-- Section C -->
+        <section id="section-c" class="grid">
+            <div class="content-wrap">
+                <h2 class="content-title">Gaver | Geschenke</h2>
+                <p>At fejre med dig/jer er den bedste gave. <br> Det synes du ikke godt om - vi sparer op til en sauna til sommerhuset.</p>
+                <hr style="height:2px;width:15%;border-width:0;color:#8F85FF;background-color:#8F85FF">
+                <p>Mit dir/euch zu feiern ist das beste Geschenk. <br> Das passt dir nicht - wir sparen für eine Sauna im Sommerhaus.</p>
+
+            </div>
+
+        </section>
+        <!-- Section D -->
+        <section id="section-d" class="grid">
+            <div class="content-wrap">
+                <h2 class="content-title">Kommer du/i? | Kommst du/ihr?</h2>
+
+            </div>
+            <div id="rsvp" class="text-center" data-scroll-reveal>
+                <div class="heading">
+                    <h2>RSVP</h2>
+                    <p><span></span><i class="fa fa-heart"></i><span></span></p>
+                </div>
+                <form role="form" method="POST" action="">
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <label for="input-name">Name</label>
+                            <input type="text" name="name" class="form-control" id="input-name" placeholder="John Doe" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <label for="input-email">Email</label>
+                            <input type="email" name="email" class="form-control" id="input-email" placeholder="name@domain.com" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-xs-6">
+                            <label for="select-guests">Guests</label>
+                            <select class="form-control" name="check" id="select-guests">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-xs-6">
+                            <label for="select-attending">I am attending...</label>
+                            <select class="form-control" name="check2" id="select-attending">
+                                <option>All Events</option>
+                                <option>Ceremony</option>
+                                <option>Reception</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="I'm attending" name="submit" class="btn btn-lg">
+                    </div>
+                </form>
+            </div>
+
+
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
+
+<?php 
+if(isset($_POST['submit'])){
+    $to= "alinemeret.maehr@gmail.com"; 
+    $from = $_POST['email']; 
+    $name = $_POST['name']; 
+    $subject = "Invitation"; //Write whatever you want here
+    $message = $name . " is with " . $_POST['check'] . " person(s) and attends " . $_POST['check2'];
+    $headers = "From:" . $from;
+mail($to,$subject,$message,$headers);
+header('location: http://127.0.0.1:5501/index.html'); //redirects the user to another page that you made if the mail was send succesfully
+} 
+?>

@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300&display=swap');
 
 /*
 	Dimension by HTML5 UP
@@ -162,9 +165,9 @@ textarea {
     appearance: none;
 }
 
-header {
+/* header {
     background-color: rgba(50, 13, 59, 0.3);
-}
+} */
 
 
 /* Basic */
@@ -237,8 +240,8 @@ input,
 select,
 textarea {
     color: #8F85FF;
-    font-family: "Bebas Neue", cursive;
-    font-weight: 300;
+    font-family: "Saira Semi Condensed", sans-serif;
+    font-weight: 100;
     font-size: 1rem;
     line-height: 1.65;
     text-align: center;
@@ -271,25 +274,26 @@ i {
 
 p {
     margin: 0 0 2rem 0;
+    letter-spacing: 0.2rem;
 }
 
 h1,
 h2,
 h4,
-h3,
+
 h5,
 h6 {
     color: #FF5C73;
-    font-weight: 600;
+    font-weight: 800;
     line-height: 1.5;
     margin: 0 0 1rem 0;
     text-transform: uppercase;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Rubik Mono One', sans-serif;
 }
 
 h3 {
     color: #8F85FF;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Saira Semi Condensed', sans-serif;
     letter-spacing: 0.2rem;
 }
 
@@ -403,7 +407,7 @@ hr {
     border: 0;
     border-bottom: solid 1px #FCF300;
     margin: auto;
-    width: 10%;
+    width: 25%;
 }
 
 .align-left {
@@ -491,11 +495,11 @@ label {
     color: #8F85FF;
     display: block;
     font-size: 0.8rem;
-    font-weight: 300;
+    font-weight: 100;
     letter-spacing: 0.2rem;
     line-height: 1.5;
     margin: 0 0 1rem 0;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 input[type="text"],
@@ -833,6 +837,7 @@ input[type="radio"]+label:before {
     .image.main {
         margin: 1.5rem 0;
     }
+
 }
 
 
@@ -1271,7 +1276,7 @@ button {
     -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
     -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
     transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-    background-image: url("../../images/PresentMoritz.JPG");
+    background-image: url("../../images/Background.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1448,6 +1453,7 @@ body.is-preload #bg:before {
 #header nav ul li {
     padding-left: 0;
     border-left: solid 1px #FCF300;
+    background-color: rgba(50, 13, 59,0.4);
 }
 
 #header nav ul li:first-child {
@@ -1468,6 +1474,7 @@ body.is-preload #bg:before {
 
 #header nav ul li a:hover {
     background-color: rgba(252, 243, 0, 0.175);
+    text-decoration: none;
 }
 
 #header nav ul li a:active {
@@ -1677,6 +1684,7 @@ body.is-preload #header .content .inner {
         height: 2.25rem;
         background-size: 14px 14px;
     }
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -1727,11 +1735,37 @@ body.is-preload #footer {
 
 /* Google map */
 
-.mapouter {
+/* .mapouter {
     position: relative;
     text-align: right;
     height: 450px;
     width: 550px;
+} */
+
+.mapouter{
+
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+
+}
+
+.mapouter iframe{
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
 }
 
 .gmap_canvas {

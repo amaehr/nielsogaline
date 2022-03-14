@@ -1,16 +1,7 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300&display=swap');
 
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html,
 body,
@@ -252,13 +243,14 @@ a {
     -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
     -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-    border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+    border-bottom-color: transparent;
     text-decoration: none;
     color: inherit;
 }
 
 a:hover {
-    border-bottom-color: transparent;
+    
+    border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
 }
 
 strong,
@@ -362,7 +354,27 @@ h6 {
     }
 }
 
+sub {
+    font-size: 0.8rem;
+    position: relative;
+    top: 0.5rem;
+}
 
+
+
+pre {
+    -webkit-overflow-scrolling: touch;
+    font-family: "Courier New", monospace;
+    font-size: 0.9rem;
+    margin: 0 0 2rem 0;
+}
+
+pre code {
+    display: block;
+    line-height: 1.75;
+    padding: 1rem 1.5rem;
+    overflow-x: auto;
+}
 
 hr {
     border: 0;
@@ -1007,7 +1019,7 @@ ul.icons li a:active {
 }
 
 
-/* Table
+/* Table */
 
 .table-wrapper {
     -webkit-overflow-scrolling: touch;
@@ -1074,7 +1086,7 @@ table.alt thead {
 table.alt tfoot {
     border-top: 0;
 }
- */
+
 
 /* Button */
 
@@ -1116,7 +1128,7 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-    background-color: rgba(50, 13, 59, 0.5);
+    background-color: rgba(50, 13, 59, 0.85);
 }
 
 input[type="submit"]:active,
@@ -1668,7 +1680,6 @@ body.is-preload #header .content .inner {
     max-width: 100%;
     margin-top: 2rem;
     text-align: center;
-
 }
 
 #footer .copyright {
@@ -1678,6 +1689,8 @@ body.is-preload #header .content .inner {
     margin-bottom: 0;
     text-transform: uppercase;
     color: #FCF300;
+
+    
 
 }
 

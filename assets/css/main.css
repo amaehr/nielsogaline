@@ -640,7 +640,7 @@ input[type="radio"]+label:before {
 
 .image:before {
     pointer-events: none;
-    background-image: url("../../images/overlay.png");
+    /* background-image: url("../../images/overlay.png"); */
     border-radius: 4px;
     content: '';
     display: block;

@@ -1,8 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300&display=swap');
-
-
 html,
 body,
 div,
@@ -72,7 +70,6 @@ ul {
     list-style: none;
 }
 
-
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -81,7 +78,6 @@ table {
 body {
     -webkit-text-size-adjust: none;
 }
-
 
 input::-moz-focus-inner {
     border: 0;
@@ -96,6 +92,7 @@ textarea {
     -ms-appearance: none;
     appearance: none;
 }
+
 
 /* header {
     background-color: rgba(50, 13, 59, 0.3);
@@ -190,7 +187,6 @@ a {
 }
 
 a:hover {
-    
     border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
 }
 
@@ -224,7 +220,6 @@ h3 {
     color: #8F85FF;
     font-family: 'Saira Semi Condensed', sans-serif;
     letter-spacing: 0.2rem;
-    
 }
 
 h1 a,
@@ -262,8 +257,6 @@ h3 {
     font-size: 1.5rem;
 }
 
-
-
 @media screen and (max-width: 736px) {
     h1 {
         font-size: 1.75rem;
@@ -274,8 +267,6 @@ h3 {
         line-height: 1.5;
     }
 }
-
-
 
 hr {
     border: 0;
@@ -696,8 +687,6 @@ input[type="radio"]+label:before {
     height: 20%;
 }
 
-
-
 .image.main img {
     width: 100%;
 }
@@ -712,7 +701,6 @@ input[type="radio"]+label:before {
     .image.main {
         margin: 1.5rem 0;
     }
-
 }
 
 
@@ -1328,7 +1316,7 @@ body.is-preload #bg:before {
 #header nav ul li {
     padding-left: 0;
     border-left: solid 1px #FCF300;
-    background-color: rgba(50, 13, 59,0.4);
+    background-color: rgba(50, 13, 59, 0.4);
 }
 
 #header nav ul li:first-child {
@@ -1354,7 +1342,6 @@ body.is-preload #bg:before {
 
 #header nav ul li a:active {
     background-color: rgba(255, 255, 255, 0.175);
-
 }
 
 body.is-article-visible #header {
@@ -1560,7 +1547,6 @@ body.is-preload #header .content .inner {
         height: 2.25rem;
         background-size: 14px 14px;
     }
-    
 }
 
 @media screen and (max-width: 480px) {
@@ -1590,9 +1576,6 @@ body.is-preload #header .content .inner {
     margin-bottom: 0;
     text-transform: uppercase;
     color: #FCF300;
-
-    
-
 }
 
 body.is-article-visible #footer {
@@ -1611,33 +1594,20 @@ body.is-preload #footer {
     opacity: 0;
 }
 
-
-.mapouter{
-
-    overflow:hidden;
-
-    padding-bottom:56.25%;
-
-    position:relative;
-
-    height:0;
-
+.mapouter {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
 }
 
-.mapouter iframe{
-
-    left:0;
-
-    top:0;
-
-    height:100%;
-
-    width:100%;
-
-    position:absolute;
-
+.mapouter iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
     border-radius: 4px;
-
 }
 
 .gmap_canvas {
